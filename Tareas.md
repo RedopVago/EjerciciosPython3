@@ -20,7 +20,7 @@ Con expresiones regulares realizar las siguientes validaciones:
         * Pueden existir espacios o guines como separador: *Ej. (33) 1456 7822, (331) 456-7822*
         * EXTRA: Los separadores deben ser iguales
 
-[*] La fecha puede varial por la configuración de los repositorios
+[*] La fecha se extiende al 19 de Junio por la configuración de los repositorios
 
 ## Tarea 3
 ###### *Entreaga: 23 de Junio*
