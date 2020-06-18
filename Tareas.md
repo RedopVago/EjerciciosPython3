@@ -25,7 +25,7 @@ Con expresiones regulares realizar las siguientes validaciones:
 ## Tarea 3
 ###### *Entreaga: 23 de Junio*
 La **Tarea 3** consiste en emular en funcionamiento de una base de datos utilizando Pickle y Shelve cumpliendo con los siguientes puntos
-* Crear 5 objetos estudiante (utilizando clase creada en el `Ejercicio 2`)
+* Crear 5 objetos estudiante (utilizando clase creada en el `Ejercicio 3`)
 * Crear una función para guardar estudiantes.
 * Crear una función para leer estudiantes.
 * Crear una función para actualizar estudiantes.
