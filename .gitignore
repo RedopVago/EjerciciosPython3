@@ -1,2 +1,7 @@
 ﻿*.xml
 .idea
+__pycache__
+*.txt
+*.bak
+*.dir
+*.dat
