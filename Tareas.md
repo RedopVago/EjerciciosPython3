@@ -8,7 +8,7 @@ Crear una función que ordene una lista de números.
 * Regresar la lista ordenada
 
 ## Tarea 2
-### *Entrega: 15 de Junio**
+###### *Entrega: 15 de Junio**
 Con expresiones regulares realizar las siguientes validaciones:
 * Correo electrónico:
     * Dominio + 1 extension: *Ej. juan@padts.mx*
