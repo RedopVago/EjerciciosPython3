@@ -10,7 +10,7 @@ Elaborar los siguientes ejercicios:
 * Validar si un año es bisiesto (escribir función)
 
 ## Ejercicio 2: *Regex*
-### *10 de Junio*
+###### *10 de Junio*
 Definir patrones para cadenas de texto que:
 * No yenga letras
 * Solo tenga números
