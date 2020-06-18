@@ -18,5 +18,17 @@ Definir patrones para cadenas de texto que:
 * Solo tenga letras minúsculas
 * No tenga numeros
 
+## Ejercicio 3: *POO*
+###### *11 de Junio*
+Ejercicios para prácticar las propiedades de la programación orientada a objetos
+* Herencia y polimorfismo:
+ * Definir una clase Figura con atributos y métodos.
+ * Definir una clase rectángulo que hereda de figura.
+ * Definir una clase Triángulo que hereda de figura.
+ 
+ 
+* Encapsulación 
+ * Crear una clase estudiante son atributos: nombre, correo electrónico y contraseña.
+ * Crear métodos para ingresar y obtener los atributos.
 
  
