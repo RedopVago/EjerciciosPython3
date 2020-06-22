@@ -31,3 +31,33 @@ Ejercicios para prácticar las propiedades de la programación orientada a objet
     * Crear una clase estudiante son atributos: nombre, correo electrónico y contraseña.
     * Crear métodos para ingresar y obtener los atributos.
  
+ 
+## Ejercicio 4: Clientes y servidores
+###### *22 de Junio*
+Crear clases para clientes y servidores TCP y UDP.
+* Crear una clase para cliente TCP
+    * Dede realizar la conexión en el constructor
+    * Debe tener un método para escribir con un parámetro para el mensaje
+    * Debe tener un método para leer que retorne el mensaje
+
+
+* Crear una clase para servidor TCP [*, **]
+    * Debe asignar puerto en el constructor
+    * El constructor contiene el procedimiento para aceptar las conexiones
+    * Debe tener un método para escribir con un parémetro para el mensaje
+    * Debe tener un método para leer que retorne el mensaje
+    
+* Crear una clase para cliente UDP
+    * Debe tener un método para escribir con un parametro para el mensaje y otro con la dirección (ip + puerto)
+    * Debe tener un método para leer que retorne el mensaje y la dirección (ip + puerto)
+    
+* Crear una clase para servidor UDP [*, **]
+    * Debe asignar puerto en el constructor
+    * El constructor contiene el procedimiento para recibir paquetes
+    * Debe tener un método para escribir con un parámetro para el mensaje y otro con las dirección (ip +puerto)
+    * Debe tener un método para leer que retorne el mensaje y la dirección (ip + puerto)
+    
+    
+\* Los servidores deben implementar un procedimiento de salida del loop
+
+\** No se limita el número de paquetes

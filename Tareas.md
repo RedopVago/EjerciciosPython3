@@ -33,4 +33,22 @@ La **Tarea 3** consiste en emular en funcionamiento de una base de datos utiliza
 
 Las funciones se deben crear tanto para Pickle como para Shelve.
 
+
+## Tarea 4
+###### *Entrega: 26 de Junio*
+Replicar `Tarea 3` utilizando base de datos con *Mongo Engine*
+* Se debe crear un modelo de estudiante que herede de *Document*
+* Utilizar base de datos con nombre 'padts' y coleccion 'estudiantes'
+* Crear método para escritura
+    * Se debe ingresar los datos de estudiante como un objeto del modelo.
+* Crear método para lectura
+    * Se debe indicar el estudiante por parámetro
+    * Se debe regresar un objeto del modelo de estudiante
+* Crear método para actualización
+    * Se debe indicar el estudiante por parámetro
+    * Se debe retornar el estudiante actualizado
+* Crear método para eliminar
+    * Se debe indicar el estudiante por parámetro
+    * Se debe retornar un objeto con todos los estudiantes restantes
+
  
