@@ -20,11 +20,11 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(185, 182)
+        MainWindow.resize(437, 466)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.verticalLayout_2 = QVBoxLayout(self.centralwidget)
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout = QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName(u"verticalLayout")
         self.formLayout = QFormLayout()
         self.formLayout.setObjectName(u"formLayout")
         self.label_2 = QLabel(self.centralwidget)
@@ -58,7 +58,7 @@ class Ui_MainWindow(object):
         self.formLayout.setWidget(2, QFormLayout.FieldRole, self.lugar)
 
 
-        self.verticalLayout_2.addLayout(self.formLayout)
+        self.verticalLayout.addLayout(self.formLayout)
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
@@ -72,13 +72,44 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_2.addWidget(self.mostrar)
 
+        self.limpiar = QPushButton(self.centralwidget)
+        self.limpiar.setObjectName(u"limpiar")
 
-        self.verticalLayout_2.addLayout(self.horizontalLayout_2)
+        self.horizontalLayout_2.addWidget(self.limpiar)
+
+
+        self.verticalLayout.addLayout(self.horizontalLayout_2)
+
+        self.cuadro = QTextEdit(self.centralwidget)
+        self.cuadro.setObjectName(u"cuadro")
+
+        self.verticalLayout.addWidget(self.cuadro)
+
+        self.selectnombre = QComboBox(self.centralwidget)
+        self.selectnombre.addItem("")
+        self.selectnombre.setObjectName(u"selectnombre")
+
+        self.verticalLayout.addWidget(self.selectnombre)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.abrirB = QPushButton(self.centralwidget)
+        self.abrirB.setObjectName(u"abrirB")
+
+        self.horizontalLayout.addWidget(self.abrirB)
+
+        self.nombrearchivoLE = QLineEdit(self.centralwidget)
+        self.nombrearchivoLE.setObjectName(u"nombrearchivoLE")
+
+        self.horizontalLayout.addWidget(self.nombrearchivoLE)
+
+
+        self.verticalLayout.addLayout(self.horizontalLayout)
 
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 185, 21))
+        self.menubar.setGeometry(QRect(0, 0, 437, 21))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -94,7 +125,11 @@ class Ui_MainWindow(object):
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Fecha", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Nombre", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Lugar", None))
-        self.Registro.setText(QCoreApplication.translate("MainWindow", u"Resgistrar", None))
+        self.Registro.setText(QCoreApplication.translate("MainWindow", u"Registrar", None))
         self.mostrar.setText(QCoreApplication.translate("MainWindow", u"Mostrar", None))
+        self.limpiar.setText(QCoreApplication.translate("MainWindow", u"Limpiar", None))
+        self.selectnombre.setItemText(0, QCoreApplication.translate("MainWindow", u"Selecciona nombre", None))
+
+        self.abrirB.setText(QCoreApplication.translate("MainWindow", u"Abrir", None))
     # retranslateUi
 

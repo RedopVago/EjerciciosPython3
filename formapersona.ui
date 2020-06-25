@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>331</width>
-    <height>182</height>
+    <width>437</width>
+    <height>466</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_2">
+   <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <layout class="QFormLayout" name="formLayout">
       <item row="1" column="0">
@@ -54,7 +54,7 @@
       <item>
        <widget class="QPushButton" name="Registro">
         <property name="text">
-         <string>Resgistrar</string>
+         <string>Registrar</string>
         </property>
        </widget>
       </item>
@@ -65,6 +65,39 @@
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QPushButton" name="limpiar">
+        <property name="text">
+         <string>Limpiar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="cuadro"/>
+    </item>
+    <item>
+     <widget class="QComboBox" name="selectnombre">
+      <item>
+       <property name="text">
+        <string>Selecciona nombre</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="abrirB">
+        <property name="text">
+         <string>Abrir</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="nombrearchivoLE"/>
+      </item>
      </layout>
     </item>
    </layout>
@@ -74,7 +107,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>331</width>
+     <width>437</width>
      <height>21</height>
     </rect>
    </property>
