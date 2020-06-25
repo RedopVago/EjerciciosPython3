@@ -1,5 +1,7 @@
 import socket as s
 
+import time
+
 cliente = s.socket(s.AF_INET, s.SOCK_DGRAM)
 
 
@@ -8,12 +10,19 @@ port = 12345
 
 addr = ip, port
 
-msg = 'Mensaje de cliente'
-cliente.sendto(msg.encode(), addr)
+salir = False
 
-data, addr = cliente.recvfrom(1024)
+while not salir:
+    msg = 'Mensaje de cliente UDP'
+    bytes = msg.encode()
 
-print(f'Recibido: {data} de {addr}')
+    cliente.sendto(bytes, addr)
+
+    data, addr = cliente.recvfrom(1024)
+
+    print(f'Recibido: {data} de {addr}')
+
+    time.sleep(2)
 
 
 

@@ -1,23 +1,24 @@
 import socket as s
 
+import time
+
 cliente = s.socket()
 
 cliente.connect(('127.0.0.1', 35491))
 print(f'Conectado al servidor')
 
-msg = 'Hola'
-bytes = msg.encode()
+salir = False
 
-cliente.send(bytes)
+while not salir:
+    msg = 'Mensaje de cliente TCP'
+    bytes = msg.encode()
 
-
-while True:
+    cliente.send(bytes)
 
     data = cliente.recv(1024)
-    print(data)
 
-    if data == b'':
-        print('Conexion se termino')
-        break
+    print(f'Recibido: {data}')
+
+    time.sleep(2)
 
 cliente.close()

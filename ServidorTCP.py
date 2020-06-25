@@ -3,7 +3,7 @@ import socket as s
 serverSocket = s.socket()
 print('Se ha creado el socket del servidor')
 
-ip = '127.0.0.1'
+ip = ''
 port = 35491
 
 serverSocket.bind((ip, port))
@@ -12,40 +12,26 @@ print(f'El socket del servidor esta atado a la direccion ip {ip} y el puerto {po
 
 serverSocket.listen()
 
-contador = 0
+salir = False
 
-while True:
-    if contador < 10:
-        (clienteCon, clientAddr) = serverSocket.accept()
-        print(f'Tipo de clienteCon: {type(clienteCon)}')
-        print(f'Tipo de clientAddr: {type(clientAddr)}')
-        print(f'addr: {clientAddr}')
-    else:
-        continue
+pktCount = 0
 
-    contador += 1
+while not salir:
+    (clienteCon, clientAddr) = serverSocket.accept()
 
-    print(f'Conexion {contador} aceptada de {clientAddr}')
+    pktCount += 1
+
+    print('Esperando paquetes')
 
     while True:
         data = clienteCon.recv(1024)
-        print(f'data: {type(data)}')
 
-        print(data)
+        pktCount += 1
+        print(f'[{pktCount}] Recibi un mensaje: {data} de {clientAddr}')
 
-        if data != b'':
-            msg1 = 'Mensaje recibido'
-            msg1Bytes = msg1.encode()  # str.encode(msg1)
+        msg = 'Mensaje recibido!'
 
-            msg2 = 'Se va a cerrar la conexion'
-            msg2Bytes = msg2.encode()
+        clienteCon.send(msg.encode())
 
-            clienteCon.send(msg1Bytes)
-            clienteCon.send(msg2Bytes)
-
-            print('Conexion cerrada')
-            clienteCon.close()
-
-            contador -= 1
-
-            break
+    print('Conexion cerrada')
+    clienteCon.close()

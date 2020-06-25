@@ -51,4 +51,9 @@ Replicar `Tarea 3` utilizando base de datos con *Mongo Engine*
     * Se debe indicar el estudiante por parámetro
     * Se debe retornar un objeto con todos los estudiantes restantes
 
- 
+## Tarea 5
+###### *Entreda: 29 de Junio*
+Crear una interfaz gráfica de usuariocon PySide2  para la `Tarea 4`
+* Utilizar QLineEdit para ingresar los datos
+* Utilizar QPushButton para realizar las acciones
+* Mostrar mensajes en QTextEdit (mensajes de escritura, lectura, actualización, eliminación y errores)
