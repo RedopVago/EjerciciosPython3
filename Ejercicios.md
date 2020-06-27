@@ -36,7 +36,7 @@ Ejercicios para prácticar las propiedades de la programación orientada a objet
 ###### *22 de Junio*
 Crear clases para clientes y servidores TCP y UDP.
 * Crear una clase para cliente TCP
-    * Dede realizar la conexión en el constructor
+    * Debe realizar la conexión en el constructor
     * Debe tener un método para escribir con un parámetro para el mensaje
     * Debe tener un método para leer que retorne el mensaje
 
