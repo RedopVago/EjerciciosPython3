@@ -11,7 +11,9 @@ class Estudiante(Document):
     def __str__(self):
         return f'id: {self.id}\n' \
                f'Nombre: {self.nombre}\n' \
-               f'Correo: {self.correo}\n'
+               f'Correo: {self.correo}\n' \
+               f'------------------------------' \
+               f'------------------------------'
 
 class EstudiantesMongoengine:
     def __init__(self):
@@ -19,6 +21,9 @@ class EstudiantesMongoengine:
 
     def guardar(self, estudiante):
         estudiante.save()
+        estudiante.reload()
+
+        return estudiante.id
 
     def leer(self, nombreEstudiante):
         e = Estudiante.objects(nombre=nombreEstudiante)
@@ -49,10 +54,16 @@ class EstudiantesMongoengine:
         if contrasena:
             update_dict['contrasena'] = contrasena
 
-        t = e.update(**update_dict)
+        e.update(**update_dict)
 
         e.reload()
         print(f'{e}')
+
+        return e
+
+    def eliminar(self, idestudiante):
+        d = Estudiante.objects(id=idestudiante).delete()
+        return True if d else False
 
 
 if __name__ == '__main__':
